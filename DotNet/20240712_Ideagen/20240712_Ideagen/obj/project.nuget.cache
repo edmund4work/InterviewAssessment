@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "lkU4XiSSOAeaip8Mh2k9VwXqiyVuxpVf7WZTxCcFWTh2mBDjoR15zvwVY8NNA1kr85D9mVkUgryYBG0VPB9WxQ==",
+  "success": true,
+  "projectFilePath": "/Volumes/planB/Github/InterviewAssessment/20240712_Ideagen/20240712_Ideagen/20240712_Ideagen.csproj",
+  "expectedPackageFiles": [
+    "/Users/sernhao/.nuget/packages/microsoft.aspnetcore.openapi/7.0.15/microsoft.aspnetcore.openapi.7.0.15.nupkg.sha512",
+    "/Users/sernhao/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "/Users/sernhao/.nuget/packages/microsoft.openapi/1.4.3/microsoft.openapi.1.4.3.nupkg.sha512",
+    "/Users/sernhao/.nuget/packages/swashbuckle.aspnetcore/6.5.0/swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "/Users/sernhao/.nuget/packages/swashbuckle.aspnetcore.swagger/6.5.0/swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "/Users/sernhao/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.5.0/swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "/Users/sernhao/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.5.0/swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

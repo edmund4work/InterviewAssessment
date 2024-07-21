@@ -1,0 +1,12 @@
+SELECT  vi.GroupID
+       ,vi.FirstName
+       ,vi.LastName
+       ,vi.Job
+       ,vi.ExternalID
+       ,vi.CompanyName
+       ,COUNT(vi.FirstName) AS Count
+FROM cb_vendorinformation AS vi
+JOIN cb_vendorgroups AS vg ON vi.GroupID = vg.GroupID
+GROUP BY  vi.FirstName
+ORDER BY Count ASC
+         ,vi.CompanyName ASC;

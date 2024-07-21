@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/20240712_Ideagen.props" />
+</Project>

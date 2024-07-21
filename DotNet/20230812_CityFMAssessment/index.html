@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+</head>
+<body>
+    <h1>Available Products</h1>
+    <ul id="product-list"></ul>
+
+    <script>
+        async function fetchProducts() {
+            try {
+                const response = await fetch('/api/Products', {
+                    headers: {
+                        'api-key': 'API-11YBQ5W9BXY3RPB'
+                    }
+                });
+                const data = await response.json();
+                displayProducts(data);
+            } catch (error) {
+                console.error('Error fetching products:', error);
+            }
+        }
+
+        function displayProducts(products) {
+            const productList = document.getElementById('product-list');
+            productList.innerHTML = '';
+
+            products.forEach(product => {
+                const listItem = document.createElement('li');
+                listItem.innerHTML = `
+                    <h3>${product.name}</h3>
+                    <p>${product.description}</p>
+                    <p>Price: $${(product.unitPrice * 1.2).toFixed(2)}</p>
+                    <p>Max Quantity: ${product.maximumQuantity}</p>
+                `;
+                productList.appendChild(listItem);
+            });
+        }
+
+        fetchProducts();
+    </script>
+</body>
+</html>

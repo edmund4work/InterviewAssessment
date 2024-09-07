@@ -35,9 +35,11 @@ namespace _20240916RushDigital.Controllers
                     if (Fib[i] > n)
                         break;
                     else if (Fib[i] < n)
-                        returnData.returnValue = "nothing"; //break;
+                        returnData.returnValue = "It is not Fibonacci Number"; //break;
+                    else if (Fib[i] == n)
+                        returnData.returnValue = "It is Fibonacci Number";// Fib[i - 1].ToString();
                     else
-                        returnData.returnValue = Fib[i - 1].ToString();
+                        returnData.returnValue = "";
 
                     returnData.listOfFibonacci.Add(Fib[i]);
                 }
